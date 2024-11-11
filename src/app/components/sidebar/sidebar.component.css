@@ -1,0 +1,82 @@
+a.clickable {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 100; /* Light font weight */
+  font-family: Arial;
+}
+
+mat-list-item a.clickable:hover {
+  text-decoration: underline;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 400; 
+}
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Ajusta el ancho según sea necesario */
+  height: 100%;
+  background-color: #001B2E; /* Color de fondo de la sidenav */
+  z-index: 1000; /* Asegura que esté por debajo de la barra de búsqueda */
+  border-radius: 0; /* Elimina las esquinas redondeadas */
+}
+
+.blue-bar {
+  width: calc(100% - 250px); /* Ajusta el ancho para dejar espacio para la sidenav */
+  height: 50px; /* Ajusta la altura según sea necesario */
+  background-color: #001B2E; /* Color de fondo de la barra azul */
+  position: fixed;
+  top: 0;
+  left: 250px; /* Coloca la barra azul al lado de la sidenav */
+  z-index: 1100; /* Asegura que esté por encima de otros elementos */
+}
+
+.search-bar {
+  width: calc(100% - 250px); /* Ajusta el ancho para dejar espacio para la sidenav */
+  height: 70px; /* Ajusta la altura para hacer la barra más gruesa */
+  background-color: transparent; /* Fondo transparente */
+  position: fixed;
+  top: 70px; /* Añade un margen desde el tope de la página */
+  left: 250px; /* Coloca la barra de búsqueda al lado de la sidenav */
+  z-index: 1100; /* Asegura que esté por encima de otros elementos */
+  display: flex;
+  justify-content: flex-start; /* Alinea el contenido al inicio (izquierda) */
+  align-items: center;
+  padding-left: 10px; /* Añade un poco de padding a la izquierda */
+}
+
+.search-input-container {
+  width: calc(100% - 20px); /* Ajusta el ancho para dejar margen a la izquierda y derecha */
+  max-width: 800px; /* Haz la barra de búsqueda un poco más larga */
+  margin: 0 10px; /* Deja un poco de margen a los lados */
+}
+
+.search-input {
+  width: 100%;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: transparent !important; /* Fondo transparente */
+  border: 1px solid white; /* Contorno blanco */
+}
+
+.mat-form-field-appearance-fill .mat-form-field-underline {
+  display: none; /* Oculta la línea inferior */
+}
+
+.mat-form-field-appearance-fill .mat-form-field-wrapper {
+  padding-bottom: 0; /* Elimina el padding inferior */
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}

@@ -1,0 +1,47 @@
+.rewards-content {
+    padding: 20px;
+    margin-top: 80px; /* Ajusta el margen superior para que no esté pegado a la barra azul */
+  }
+  
+  .points-display {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .rewards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .reward-card {
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .reward-card img {
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .reward-card h3 {
+    font-size: 16px; /* Tamaño de fuente más pequeño para el nombre de la recompensa */
+  }
+  
+  .reward-card .mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* src/app/components/rewards/rewards.component.css */
+.sidebar-container {
+  position: relative;
+  z-index: 10;
+  background-color: #fff; /* Cambia el color según sea necesario */
+  width: 250px; /* Ajusta el ancho según sea necesario */
+  float: left; /* Asegura que esté alineado a la izquierda */
+}
+
+.rewards-content {
+  margin-left: 260px; /* Ajusta el margen según el ancho de la barra lateral */
+}

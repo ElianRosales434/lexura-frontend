@@ -1,0 +1,33 @@
+<!-- src/app/components/login/login.component.html -->
+<div class="login">
+  <div class="login-form">
+    <img src="src\assets\images\lexuraA.png" class="logo">
+    <div class="title">Iniciar Sesión</div>
+    
+    <div class="input-group">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Usuario</mat-label>
+        <input matInput placeholder="Usuario" #username>
+      </mat-form-field>
+    </div>
+    <div class="input-group">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" placeholder="Contraseña" #password>
+      </mat-form-field>
+    </div>
+    <div class="button-group">
+      <button mat-raised-button color="primary" class="login-button" (click)="login(username.value, password.value)">Iniciar sesión</button>
+    </div>
+    <p class="no-account">
+      <span class="text">¿No tienes una cuenta? </span>
+      <span class="register-link">
+        <a routerLink="/create-account">Regístrate aquí</a>
+      </span>
+    </p>
+  </div>
+  <div class="welcome-section">
+    <div class="welcome-title">Lexura</div>
+    <p class="welcome-text">Convierte tus lecturas en premios. Cada página cuenta.</p>
+  </div>
+</div>

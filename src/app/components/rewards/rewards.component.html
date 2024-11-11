@@ -1,0 +1,23 @@
+<!-- src/app/components/rewards/rewards.component.html -->
+<div class="sidebar-container">
+  <app-sidebar></app-sidebar>
+</div>
+<div class="rewards-content">
+  <div class="points-display">
+    <h2>Puntos acumulados: {{ accumulatedPoints }}</h2>
+  </div>
+  <div class="rewards-list">
+    <mat-card *ngFor="let reward of rewards" class="reward-card">
+      <img mat-card-image [src]="reward.image" [alt]="reward.title">
+      <mat-card-content>
+        <h3>{{ reward.title }}</h3>
+        <p>Puntos necesarios: {{ reward.points }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="redeemReward(reward)">
+          Canjear
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

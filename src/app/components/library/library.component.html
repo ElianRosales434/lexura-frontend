@@ -1,0 +1,24 @@
+<!-- src/app/components/home/home.component.html -->
+<div class="sidebar-container">
+  <app-sidebar></app-sidebar>
+</div>
+<div class="search-bar">
+  <div class="search-input-container">
+    <mat-form-field appearance="fill" class="search-input">
+      <mat-label>Buscar libros</mat-label>
+      <input matInput [(ngModel)]="searchQuery" placeholder="Buscar libros">
+      <button mat-icon-button matSuffix>
+        <mat-icon>search</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+</div>
+<div class="home-content">
+  <!-- Contenido del HomeComponent -->
+  <div class="book-list">
+    <div *ngFor="let book of filteredBooks" class="book-item">
+      <img [src]="book.cover" [alt]="book.title" class="book-cover">
+      <div class="book-title">{{ book.title }}</div>
+    </div>
+  </div>
+</div>

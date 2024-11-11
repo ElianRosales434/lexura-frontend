@@ -1,0 +1,83 @@
+.search-bar {
+    width: calc(100% - 250px); /* Ajusta el ancho para dejar espacio para la sidenav */
+    height: 70px; /* Ajusta la altura para hacer la barra más gruesa */
+    background-color: #001B2E; /* Color de fondo de la barra de búsqueda */
+    position: fixed;
+    top: 20px; /* Añade un margen desde el tope de la página */
+    left: -10px; /* Coloca la barra de búsqueda al lado de la sidenav */
+    z-index: 1100; /* Asegura que esté por encima de otros elementos */
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido al inicio (izquierda) */
+    align-items: center;
+    padding-left: 10px; /* Añade un poco de padding a la izquierda */
+  }
+  
+  .search-input-container {
+    width: calc(100% - 20px); /* Ajusta el ancho para dejar margen a la izquierda y derecha */
+    max-width: 800px; /* Haz la barra de búsqueda un poco más larga */
+    margin: 0 10px; /* Deja un poco de margen a los lados */
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: transparent !important; /* Fondo transparente */
+    border: 1px solid white; /* Contorno blanco */
+  }
+  
+  .mat-form-field-appearance-fill .mat-form-field-underline {
+    display: none; /* Oculta la línea inferior */
+  }
+  
+  .mat-form-field-appearance-fill .mat-form-field-wrapper {
+    padding-bottom: 0; /* Elimina el padding inferior */
+  }
+  
+  .home-content {
+    padding: 20px;
+    margin-top: 100px; /* Ajusta el margen superior para evitar que el contenido se superponga con la barra de búsqueda */
+  }
+  
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .book-item {
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .book-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .book-title {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #002039;
+  }
+  
+  /* src/app/components/home/home.component.css */
+  .sidebar-container {
+    position: relative;
+    z-index: 10;
+    background-color: #fff; /* Cambia el color según sea necesario */
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    float: left; /* Asegura que esté alineado a la izquierda */
+  }
+  
+  .search-bar {
+    margin-left: 260px; /* Ajusta el margen según el ancho de la barra lateral */
+  }
+  
+  .home-content {
+    margin-left: 260px; /* Ajusta el margen según el ancho de la barra lateral */
+  }

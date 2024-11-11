@@ -1,0 +1,50 @@
+<div class="create-account">
+  <div class="container">
+    <img class="logo" src="assets/img/lexuralogo12344-1.png" />
+    <div class="title">Crear Cuenta</div>
+    
+    <div class="input-group">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Nombre completo</mat-label>
+        <input matInput placeholder="Nombre completo">
+      </mat-form-field>
+    </div>
+    <div class="input-group">
+      <div class="input-half">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Fecha de nacimiento</mat-label>
+          <input matInput [matDatepicker]="picker" placeholder="Fecha de nacimiento">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker startView="multi-year" panelClass="datepicker-panel"></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="input-half">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>CUI o DPI</mat-label>
+          <input matInput placeholder="CUI o DPI">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="input-group">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Correo electrónico</mat-label>
+        <input matInput type="email" placeholder="Correo electrónico">
+      </mat-form-field>
+    </div>
+    <div class="input-group">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Nombre de usuario</mat-label>
+        <input matInput placeholder="Nombre de usuario">
+      </mat-form-field>
+    </div>
+    <div class="input-group">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" placeholder="Contraseña">
+      </mat-form-field>
+    </div>
+    <div class="button-group">
+      <button mat-raised-button color="primary" class="create-account-button">Crear Cuenta</button>
+    </div>
+  </div>
+</div>

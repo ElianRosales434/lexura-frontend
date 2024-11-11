@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+/* Import the font in index.html */
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+/* Apply the font globally */
+* {
+  font-family: 'Secular One', sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Secular One', sans-serif;
+}

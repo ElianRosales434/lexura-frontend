@@ -1,0 +1,24 @@
+<!-- src/app/components/sidebar/sidebar.component.html -->
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" opened class="sidenav">
+    <img class="logo" src="/assets/images/lexuraB.png" alt="Lexura Logo" />
+    <mat-nav-list>
+      <mat-list-item>
+        <span class="section-title">Librería</span>
+      </mat-list-item>
+      <mat-list-item>
+        <a matLine routerLink="/library" class="clickable">Mis Libros</a>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="section-title">Recompensas</span>
+      </mat-list-item>
+      <mat-list-item>
+        <a matLine routerLink="/rewards" class="clickable">Canjear</a>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="blue-bar"></div>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
