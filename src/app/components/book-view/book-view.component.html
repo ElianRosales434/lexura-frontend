@@ -1,1 +1,29 @@
-<p>book-view works!</p>
+<!-- src/app/components/book-view/book-view.component.html -->
+<div class="container">
+  <!-- Header with Logo -->
+  <header>
+    <img src="assets/images/logo.png" alt="Lexura Logo" class="logo">
+  </header>
+
+  <!-- Book Content Area -->
+  <div class="content">
+    <!-- Pause Menu Icon -->
+    <div class="menu-icon">&#9776;</div>
+
+    <!-- Book Title -->
+    <h1>{{ book?.title }}</h1>
+    <h2>{{ book?.author }}</h2>
+
+    <!-- Book Text -->
+    <div class="book-text">
+      <p>{{ pageContent }}</p>
+    </div>
+  </div>
+
+  <!-- Page Footer -->
+  <footer>
+    <button class="nav-button" (click)="prevPage()">&#8592;</button>
+    <span class="page-info">Página {{currentPage}} de {{totalPages}}</span>
+    <button class="nav-button" (click)="nextPage()">&#8594;</button>
+  </footer>
+</div>

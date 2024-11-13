@@ -6,9 +6,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 
 interface Book {
+  id: number;
   title: string;
   cover: string;
 }
@@ -33,13 +35,13 @@ export class LibraryComponent implements OnInit {
   searchQuery: string = '';
   filteredBooks: Book[] = [];
   books: Book[] = [
-    { title: 'Título del Libro 1', cover: 'assets/img/book1.jpg' },
-    { title: 'Título del Libro 2', cover: 'assets/img/book2.jpg' },
-    { title: 'Título del Libro 3', cover: 'assets/img/book3.jpg' },
+    { id: 1, title: 'Título del Libro 1', cover: 'assets/img/book1.jpg' },
+    { id: 2, title: 'Título del Libro 2', cover: 'assets/img/book2.jpg' },
+    { id: 3, title: 'Título del Libro 3', cover: 'assets/img/book3.jpg' },
     // Agrega más libros según sea necesario
   ];
 
-  constructor() { }
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.filteredBooks = this.books;
@@ -53,5 +55,9 @@ export class LibraryComponent implements OnInit {
     } else {
       this.filteredBooks = this.books;
     }
+  }
+
+  viewBook(book: Book): void {
+    this.router.navigate(['/book-view', book.id]);
   }
 }

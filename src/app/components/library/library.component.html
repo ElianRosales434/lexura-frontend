@@ -1,4 +1,4 @@
-<!-- src/app/components/home/home.component.html -->
+<!-- src/app/components/library/library.component.html -->
 <div class="sidebar-container">
   <app-sidebar></app-sidebar>
 </div>
@@ -6,19 +6,20 @@
   <div class="search-input-container">
     <mat-form-field appearance="fill" class="search-input">
       <mat-label>Buscar libros</mat-label>
-      <input matInput [(ngModel)]="searchQuery" placeholder="Buscar libros">
+      <input matInput [(ngModel)]="searchQuery" (input)="searchBooks()" placeholder="Buscar libros">
       <button mat-icon-button matSuffix>
         <mat-icon>search</mat-icon>
       </button>
     </mat-form-field>
   </div>
 </div>
-<div class="home-content">
-  <!-- Contenido del HomeComponent -->
+<div class="library-content">
   <div class="book-list">
-    <div *ngFor="let book of filteredBooks" class="book-item">
-      <img [src]="book.cover" [alt]="book.title" class="book-cover">
-      <div class="book-title">{{ book.title }}</div>
-    </div>
+    <mat-card *ngFor="let book of filteredBooks" class="book-card" (click)="viewBook(book)">
+      <img mat-card-image [src]="book.cover" [alt]="book.title">
+      <mat-card-content>
+        <h3>{{ book.title }}</h3>
+      </mat-card-content>
+    </mat-card>
   </div>
 </div>

@@ -4,7 +4,9 @@
 </div>
 <div class="rewards-content">
   <div class="points-display">
-    <h2>Puntos acumulados: {{ accumulatedPoints }}</h2>
+    <h2>Tienes</h2>
+    <h2><strong>{{ accumulatedPoints | number:'1.0-0' }}</strong></h2>
+    <h2>puntos</h2>
   </div>
   <div class="rewards-list">
     <mat-card *ngFor="let reward of rewards" class="reward-card">
