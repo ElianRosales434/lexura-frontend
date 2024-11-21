@@ -55,16 +55,34 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start; /* Alinea el contenido al tope superior */
+    border-radius: 0; /* Elimina los bordes redondeados */
+    background-color: #001B2E;
+    color  : #ffffff;
   }
   
   .book-card img {
     width: 100%;
-    height: 70%; /* Ajusta la altura de la imagen para que ocupe el 70% de la tarjeta */
-    object-fit: cover;
+    height: 210px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área y se corte si es necesario */
+    object-position: top; /* Alinea la imagen al tope superior */
+  }
+  
+  .book-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el texto verticalmente */
+    align-items: center; /* Centra el texto horizontalmente */
+    flex: 1;
   }
   
   .book-card h3 {
-    font-size: 16px; /* Tamaño de fuente para el título del libro */
-    margin: 10px 0; /* Margen superior e inferior */
+    font-size: 20px; /* Tamaño de fuente para el título del libro */
+    margin: 5px 0; /* Reduce el margen superior e inferior */
+    line-height: 1.2; /* Reduce el espacio entre líneas */
+  }
+  
+  .book-card p {
+    margin: 5px 0; /* Ajusta el margen superior e inferior */
+    line-height: 1.2; /* Reduce el espacio entre líneas */
   }
