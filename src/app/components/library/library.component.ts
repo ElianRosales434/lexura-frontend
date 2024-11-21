@@ -35,9 +35,9 @@ export class LibraryComponent implements OnInit {
   searchQuery: string = '';
   filteredBooks: Book[] = [];
   books: Book[] = [
-    { id: 1, title: 'Título del Libro 1', cover: 'assets/img/book1.jpg' },
-    { id: 2, title: 'Título del Libro 2', cover: 'assets/img/book2.jpg' },
-    { id: 3, title: 'Título del Libro 3', cover: 'assets/img/book3.jpg' },
+    { id: 1, title: 'Hasta que el verano se acabe', cover: 'assets/images/book1.webp' },
+    { id: 2, title: 'Harry Potter y la piedra filosofal', cover: 'assets/images/book2.jpg' },
+    { id: 3, title: 'Cada Historia Cuenta', cover: 'assets/images/book3.jpg' },
     // Agrega más libros según sea necesario
   ];
 

@@ -25,10 +25,9 @@ interface Reward {
 export class RewardsComponent {
   accumulatedPoints: number = 1200; // Ejemplo de puntos acumulados
   rewards: Reward[] = [
-    { title: 'Recompensa 1', image: 'assets/img/reward1.jpg', points: 300 },
-    { title: 'Recompensa 2', image: 'assets/img/reward2.jpg', points: 500 },
-    { title: 'Recompensa 3', image: 'assets/img/reward3.jpg', points: 700 },
-    { title: 'Recompensa 4', image: 'assets/img/reward4.jpg', points: 1000 }
+    { title: 'La Navidad en las Montañas', image: 'assets/images/NavidadMonta.png', points: 300 },
+    { title: 'La isla del tesoro  ', image: 'assets/images/IslaTesoro.jpg', points: 500 },
+    { title: '1 mes de Spotify', image: 'assets/images/Spotify.jpg', points: 2000 }
   ];
 
   redeemReward(reward: Reward): void {
