@@ -1,14 +1,16 @@
-<!-- src/app/components/book-view/book-view.component.html -->
 <div class="container">
   <!-- Header with Logo -->
   <header>
-    <img class="logo" src="assets/images/lexuraBT.png" alt="Lexura Logo" />
+    <a href="/library">
+      <img class="logo" src="../../../assets/images/lexuraBT.png" alt="Lexura Logo" />
+    </a>
+    
   </header>
 
   <!-- Book Content Area -->
   <div class="content">
     <!-- Pause Menu Icon -->
-    <div class="menu-icon">&#9776;</div>
+    <div class="menu-icon" (click)="pauseReading()">Pausar lectura</div>
 
     <!-- Book Title -->
     <h1>{{ book?.title }}</h1>
